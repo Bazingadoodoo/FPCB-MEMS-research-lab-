@@ -1,10 +1,10 @@
 clc 
 clear all
 
-f = 30;             % Hz
-n = 4;              % division in segments
+f = 44;             % Hz
+n = 5;              % division in segments
 t = 11e-6;           % program runtime
-p = 4*n+1;          % number of points
+p = 4*n+1          % number of points
 
 %% function generator
 
