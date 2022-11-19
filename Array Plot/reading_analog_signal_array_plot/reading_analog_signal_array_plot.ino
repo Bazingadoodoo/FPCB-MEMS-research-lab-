@@ -14,11 +14,13 @@ cbi(ADCSRA,ADPS1) ;
 cbi(ADCSRA,ADPS0) ;
 */
 
+adc->adc1
 
-//notes on possible soltions to try out
-//adc set functions (ADC library => include ADC.h)
-//serialUSB.write (...very high speed)
-
+/*
+notes on possible soltions to try out:
+ - adc set functions (ADC library => include ADC.h) (ADC->ADC1->set...)
+ - serialUSB.write (...very high speed)
+*/
 
 // actual program -------------------------------------------------------------------------------------------------------------
 int PSD_pin = A1;                       // pin number for PSD input signals
