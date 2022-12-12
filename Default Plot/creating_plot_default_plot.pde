@@ -6,7 +6,7 @@ float inByte;         // Incoming serial data (floating pt)
 String inString;      // incoming serial data (string)
 String [] token;
 int i, x, y;
-int nPoints = 50000;
+//int nPoints = 50000;
 GPlot myplot1;
 
 void setup ()
@@ -22,8 +22,6 @@ void setup ()
   //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   // Set Up PLot
   //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  //
-  GPointsArray points = new GPointsArray(nPoints);
-  for (int i = 0; i < nPoints; i++) 
   myplot1 = new GPlot(this);
   myplot1.setPos(0,0);
   myplot1.setDim(1500,660);
@@ -51,10 +49,10 @@ void draw()
       //println(x);                     //check
       y = int(token[0]);            
       //println(x);                     //check
-      points.add(x,y);
+      myplot1.addPoint(x,y);
     }
   }
-  myplot1.setPoints(points);
+  //myplot1.setPoints(points);
   myplot1.defaultDraw();
 //  myplot1.defaultDraw();
 //  myplot1.drawBackground();
