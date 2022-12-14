@@ -48,7 +48,7 @@ void draw()
       x = int(token[1]);
       //println(x);                     //check
       y = int(token[0]);            
-      //println(x);                     //check
+      //println(y);                     //check
       myplot1.addPoint(x,y);
     }
   }

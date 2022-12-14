@@ -27,11 +27,16 @@ void loop() {
 
   time = millis();
   
-  ///*
+  //MATLAB
+  SerialUSB.println(PSD_val);
+
+  //Processing
+  /*
   SerialUSB.print(PSD_val);                // time interval (plotting)
   SerialUSB.print(" ");
   SerialUSB.println(time);
-  //*/
+  */
+  
   // Serial.print(TOF_val);             // TOF results
   // long int t2 = micros();            // time test 
   // Serial.print(t2-t1);               // time test
